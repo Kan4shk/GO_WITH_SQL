@@ -40,7 +40,6 @@ To clean and prepare raw layoff data by removing duplicates, standardizing entri
 ## Files
 
 * `raw_layoffs.sql` – Contains the original messy data
-* `clean_layoffs.sql` – Final cleaned version of the data
 * `README.md` – You’re reading it :)
 
 ---
