@@ -1,60 +1,61 @@
-# Data Cleaning Project – Layoffs Data
+# 🧠 SQL Projects Portfolio
 
-This project is a hands-on data cleaning exercise where I took a messy raw dataset and transformed it into a clean, analysis-ready format using **SQL (MySQL Workbench)**.
+ This repository includes hands-on SQL projects focusing on real-world data cleaning, exploratory data analysis (EDA), and insights generation using structured query techniques.
 
-## Project Objective
-
-To clean and prepare raw layoff data by removing duplicates, standardizing entries, handling null values, and dropping unnecessary information — a crucial first step in any data analytics workflow.
-
----
-
-## What I Did
-
-1. **Removed Duplicates**
-
-   * Used `CTE` (Common Table Expressions) and `ROW_NUMBER()` to identify and remove duplicate rows based on multiple columns like `company`, `industry`, `date`, etc.
-
-2. **Standardized Text Data**
-
-   * Applied `TRIM()` function to remove leading/trailing spaces.
-   * Used `DISTINCT` and `UPDATE` statements to fix inconsistent formatting (e.g., industry names like "Crypto " to "Crypto").
-
-3. **Handled Null & Blank Values**
-
-   * Filtered out rows with null or blank fields using `JOIN` and `WHERE` clauses.
-   * Ensured critical columns (like company name, industry, etc.) had complete data.
-
-4. **Dropped Unnecessary Data**
-
-   * Removed unwanted columns and rows using `ALTER TABLE` and `DROP` commands to simplify the dataset for analysis.
+Each project demonstrates practical SQL skills such as:
+- Data wrangling and standardization
+- Aggregations, filtering, and joins
+- Window functions and CTEs
+- Business insights from raw datasets
 
 ---
 
-## Tools Used
+##  Projects Included
 
-* **SQL (MySQL Workbench)**
-* Git & GitHub for version control
+### 1.  Data Cleaning Project (Raw Layoffs Dataset)
 
----
+**File:** `Data Cleaning.sql`  
+**Summary:**  
+This project involved cleaning a raw dataset on global layoffs. The goal was to prepare the data for analysis by:
+- Handling null values and standardizing text fields
+- Converting date formats
+- Removing duplicates
+- Creating new cleaned columns and tables for downstream use
 
-## Files
-
-* `Data_Cleaning_project.sql` – Cleaned data
-* `README.md` – You’re reading it :)
-
----
-
-## Key Takeaway
-
-This project helped me understand how essential it is to clean and prepare data before moving into analysis or visualization. Every insight depends on clean data!
+>  **Status:** Completed and cleaned data exported for use in EDA.
 
 ---
 
-## What's Next?
+### 2.  Exploratory Data Analysis (EDA) on Layoffs
 
-Now that the data is cleaned, the next step would be:
+**File:** `EDA PROJECT.sql`  
+**Summary:**  
+Performed deep analysis on the cleaned layoffs dataset to extract insights on:
+- Most affected industries and companies
+- Yearly and monthly trends
+- Cumulative layoffs over time
+- Top 5 companies by layoffs each year
 
-* Exploratory Data Analysis (EDA)
+Used:
+- `GROUP BY`, `SUM()`, `ORDER BY`
+- `SUBSTRING()` and `YEAR()` for time analysis
+- Window functions (`DENSE_RANK`, `SUM() OVER`)
+- Common Table Expressions (CTEs)
+
+>  **Status:** Completed with powerful trends and breakdowns
 
 ---
+
+## How to Run
+
+1. Clone this repo or download project files.
+2. Open files in your SQL editor (e.g., MySQL Workbench).
+3. Ensure the dataset (`raw_layoffs01`) is available in your database.
+4. Run queries in sequence or by section.
+
+---
+
+
+
+
 
